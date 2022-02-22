@@ -1,0 +1,210 @@
+@font-face { 
+  font-family: Kia Signature-Bold; 
+  src: url(http://localhost/kiaapp/wp-content/themes/JointsWP-CSS-master/fonts/KiaSignatureOTFBold.otf); 
+  font-weight: normal; 
+}
+
+@font-face { 
+  font-family: Kia Signature-Light; 
+  src: url(http://localhost/kiaapp/wp-content/themes/JointsWP-CSS-master/fonts/KiaSignatureOTFLight.otf); 
+  font-weight: normal; 
+}
+
+@font-face { 
+  font-family: Kia Signature-Regular; 
+  src: url(http://localhost/kiaapp/wp-content/themes/JointsWP-CSS-master/fonts/KiaSignatureOTFRegular.otf); 
+  font-weight: normal; 
+}
+
+p{
+  font-family: Kia Signature-Regular; 
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("http://localhost/kiaapp/wp-content/uploads/2022/02/TORONTO_KIA_MAP.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0;
+  z-index: 1;
+}
+
+.marker-container{
+  width: 4%;
+  height: 7%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.x-val, .y-val{
+  display: none;
+}
+
+.marker-title{
+  color: #fff;  
+  position: absolute;
+  font-size: 1.4vw;
+  width: 1000px;
+  top: 16.5%;
+  z-index: 0;
+}
+
+.marker-image{
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+
+ 
+
+ 
+
+
+
+
+
+}
+
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: -1vh;
+  right: 3vw;
+  font-size: 6vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* .close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+
+
+.slide-content{
+  color: #fff;
+  position: absolute;
+  top: 5%;
+  left:5%;
+  line-height: 1em;
+}
+
+.slide-header{
+  font-size: 3.8vw;
+  line-height: 7vh;
+  font-family: Kia Signature-Bold;
+}
+
+.slide-sub-header{
+  font-size: 2.5vw;
+  font-family: Kia Signature-Light;
+}
+
+.slide-icon{
+  width: 4.2vw;
+}
+
+.slide-icon img{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+
+
+/* Light box styling */
+.light-fade {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  align-items: center;
+  justify-content: center;
+}
+
+.light-container {
+  position: relative;
+  z-index: 1002;
+  overflow: visible;
+  width: 59vw;
+}
+
+.light-content{
+  width: 100%;
+}
+
+.light-close{
+  z-index: 1010;
+  display: none;
+}
+
+
+/* Home screen video */
+#home-screen-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%; 
+  height: 100%;
+  z-index: 10;
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.icon-button{
+  width:4vw;
+}
+
+.icon-button img{
+  width: 100%;
+  height: auto;
+}
