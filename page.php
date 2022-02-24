@@ -38,12 +38,26 @@ get_header(); ?>
 
 		<?php
 		$legends = get_field('legend_points');
-		if($legends):
-			foreach($legends as $legend):?>
-				<div class="legend-container">
-					<img src="<?php echo get_field('home_button'); ?>"/>
-				</div>
+		if($legends):?>
+			<div class="legend-container">
+			<?php foreach($legends as $legend):?>
+				<div class="legend-line">
+					<div class="legend_marker_container">
+						<img onlick="changeMap(<?php echo $legend['map_image_change']; ?>)" src="<?php echo $legend['legend_marker_image']; ?>"/>
+					</div>
+					<p><?php echo $legend['legend_marker_title']; ?></p>
+				</div>				
 			<?php endforeach; ?>
+				<div class="legend_footer">
+					<div class="legend_footer_text">
+						<h1><?php echo get_field('legend_header'); ?></h1>
+						<p><?php echo get_field('legend_sub_header'); ?></p>
+					</div>
+					<div class="qr_code_image">
+						<img src="<?php echo get_field('legend_qr_code'); ?>" alt="qr code">
+					</div>
+				</div>
+			</div>
 		<?php endif; ?>
 
 
